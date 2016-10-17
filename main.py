@@ -64,6 +64,7 @@ class MainWindow(QDialog, Ui_MainWindow):
         except ValueError:
             self.show_error()
             self.input = None
+            return
         self.calculate()
         self.input = None
 
